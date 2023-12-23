@@ -1,0 +1,8 @@
+git init
+git add .
+git commit -m "react first commit."
+git remote add source https://github.com/Jagdishsinghdhami/react_course.git
+git remote -v
+git branch -M master
+git push -u origin master
+
