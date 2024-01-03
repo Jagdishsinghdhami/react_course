@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 const Counter = () => {
   const [counter, setCounter] = useState(0);
+  let num = useRef(0);
   const plusHandler = () => {
     console.log("plus number");
-    setTimeout(() => {
-      setCounter((counter) => counter + 1);
-      setCounter((counter) => counter + 1);
-      setCounter((counter) => counter + 1);
-      setCounter((counter) => counter + 1);
-    }, 3000);
+    setCounter((counter) => counter + 1);
+    setCounter((counter) => counter + 1);
+    setCounter((counter) => counter + 1);
+    setCounter((counter) => counter + 1);
+    num.current++;
+    console.log("num.current => ", num.current);
   };
   const minusHandler = () => {
     console.log("minus number");

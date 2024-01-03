@@ -38,3 +38,17 @@
   position: absolute;
   right: 4em;
 }
+.containers.darkMode {
+  color: #fff;
+}
+.containers.lightMode {
+  color: #000;
+}
+.container.darkMode {
+  color: #fff;
+}
+.container.lightMode,
+.lightMode .channel,
+.lightMode .views {
+  color: #000;
+}

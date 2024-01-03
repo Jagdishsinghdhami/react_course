@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Video.css";
+import ThemeContext from "../context/ThemeContext";
+import useVideoDispatch from "../hooks/VideoDispatch";
 
 const Video = ({
   id = "6",
@@ -9,13 +11,17 @@ const Video = ({
   time,
   verified,
   children,
-  deleteVideo,
   editVideo,
 }) => {
+  const theme = useContext(ThemeContext);
+  const dispatch = useVideoDispatch();
   return (
     <>
-      <div className="containers m-2 bg-black text-white pl-1">
-        <button className="close" onClick={() => deleteVideo(id)}>
+      <div className={`containers m-2 bg-black text-white pl-1 ${theme}`}>
+        <button
+          className="close"
+          onClick={() => dispatch({ type: "DELETE", payload: id })}
+        >
           X
         </button>
         <button className="edit" onClick={() => editVideo(id)}>

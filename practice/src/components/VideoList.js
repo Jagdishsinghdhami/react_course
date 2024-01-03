@@ -1,8 +1,9 @@
-import React from "react";
 import PlayButton from "./PlayButton";
 import Video from "./Video";
+import useVideos from "../hooks/Videos";
 
-const VideoList = ({ videos, deleteVideo, editVideo }) => {
+const VideoList = ({ editVideo }) => {
+  const videos = useVideos();
   return (
     <>
       <div className="flex justify-center flex-wrap">
@@ -14,7 +15,6 @@ const VideoList = ({ videos, deleteVideo, editVideo }) => {
             views={video.views}
             time={video.time}
             verified={video.verified}
-            deleteVideo={deleteVideo}
             editVideo={editVideo}
           >
             <PlayButton
