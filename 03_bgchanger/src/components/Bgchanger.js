@@ -41,7 +41,7 @@ const Bgchanger = () => {
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "black" }}
           >
-            Blue
+            Black
           </button>
         </div>
       </div>
