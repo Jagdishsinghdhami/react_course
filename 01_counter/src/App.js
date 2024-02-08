@@ -8,24 +8,10 @@ function App() {
   const handleClick = () => {
     if (counter === 20) setCounter(0);
     else setCounter(counter + 1);
-    // if (counter <= 20) {
-    //   setCounter(counter + 1);
-    //   console.log(counter);
-    // } else {
-    //   setCounter(counter);
-    //   console.log(`after 20 value is not increased`);
-    // }
   };
   const handleMinusClick = () => {
     if (counter === 0) setCounter(20);
     else setCounter(counter - 1);
-    // if (counter >= 0) {
-    //   setCounter(counter - 1);
-    //   console.log(`counterminus ${counter}`);
-    // } else {
-    //   setCounter(counter);
-    //   console.log(`minus value is not acceptable`);
-    // }
   };
   return (
     <>
