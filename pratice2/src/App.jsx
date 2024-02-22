@@ -1,21 +1,21 @@
 import "./App.css";
-import ClassComp from "./class/ClassComp";
-// import LoginContext from "./components/LoginContext";
-// import ProfileContext from "./components/ProfileContext";
-// import { ContextHook } from "./context/ContextHook";
-// import CurrencyConverter from "./components/CurrencyConverter";
-// import PasswordGenerator from "./components/PasswordGenerator";
+// import CheckBox from "./components/CheckBox";
+// import PlayGame from "./components/PlayGame";
+import Practice1 from "./components/Practice1";
+// import Post from "./components/Post";
 
 function App() {
+  const heading = {
+    color: "red",
+    fontSize: "40px",
+  };
   return (
     <>
-      {/* <PasswordGenerator /> */}
-      {/* <CurrencyConverter /> */}
-      {/* <ContextHook>
-        <LoginContext />
-        <ProfileContext />
-      </ContextHook> */}
-      <ClassComp />
+      <h1 style={heading}>React.js Practice</h1>
+      {/* <Post /> */}
+      {/* <CheckBox /> */}
+      {/* <PlayGame /> */}
+      <Practice1 />
     </>
   );
 }
